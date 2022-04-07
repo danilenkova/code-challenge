@@ -1,0 +1,57 @@
+.landing {
+  max-width: 428px;
+  height: 830px;
+  margin: 0 auto;
+  padding-top: 67px;
+  background-image: url('../images/dog-bg-mobile.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 623px;
+  border-top: 1px solid #cccccc;
+  @media screen and (min-width: 428px) and (max-width: 599px) {
+    max-width: 100%;
+  }
+  @media screen and (min-width: 600px) {
+    max-width: 100%;
+    height: 1045px;
+    padding-top: 170px;
+    background-image: url('../images/dog-bg-desktop.jpeg');
+    background-position: bottom;
+    background-size: cover;
+  }
+  @media screen and (min-width: 2100px) {
+    max-width: 2400px;
+    height: 1127px;
+    background-position: bottom -300px left 0;
+    background-size: 2773px;
+    mix-blend-mode: normal;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 600px) {
+      align-items: flex-start;
+    }
+  }
+  &__title {
+    width: 324px;
+    margin: 0 auto 44px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @media screen and (min-width: 600px) {
+      width: 795px;
+      text-align: start;
+      margin: 0;
+      margin-bottom: 55px;
+      font-size: 96px;
+      line-height: 112px;
+    }
+  }
+}

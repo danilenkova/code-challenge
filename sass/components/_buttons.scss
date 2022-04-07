@@ -1,0 +1,19 @@
+.landing__button {
+  width: 268px;
+  height: 68px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  background: #fa4d16;
+  border-radius: 29px;
+  border: none;
+  @media screen and (min-width: 601px) {
+    width: 414px;
+    height: 105px;
+    font-size: 40px;
+    line-height: 47px;
+  }
+}

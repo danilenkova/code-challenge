@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Finder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <a href="#" class="logo">
+          <img src="./images/logo.svg" alt="logo" />
+        </a>
+        <div class="header__menu">
+          <ul class="menu">
+            <li class="menu__item"><a href="#" class="menu__link">Find Pets</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">About</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="header__menu--mobile">
+          <p class="menu__title">Menu</p>
+          <img src="./images/menu.svg" alt="Menu" />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="landing">
+        <div class="landing__content container">
+          <h1 class="landing__title">Find Your New Best Friend</h1>
+          <button type="button" class="landing__button">Get Started</button>
+        </div>
+      </section>
+      <section class="pets">
+        <div class="container">
+          <h2 class="pets__title">Available Pets</h2>
+          <ul class="pets__list"></ul>
+        </div>
+      </section>
+    </main>
+    <script src="./js/pets-card.js"></script>
+  </body>
+</html>

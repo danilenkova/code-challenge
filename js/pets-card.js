@@ -26,7 +26,7 @@ const buildPetsList = () => {
             <p>${pet.age} ${label}</p>
             </div>
             <div class="pet__location">
-            <img src="../images/location-marker.svg" alt="marker" />
+            <img src="./images/location-marker.svg" alt="marker" />
             <p>${pet.city}, ${pet.state}</p>
             </div>
             </div>

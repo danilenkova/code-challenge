@@ -5,6 +5,7 @@
   }
   @media screen and (min-width: 1728px) {
     padding: 101px 0 211px;
+    margin: 0 auto;
   }
   &__title {
     margin-bottom: 51px;
@@ -22,27 +23,29 @@
     }
   }
   &__list {
-    display: flex;
-    flex-direction: column;
-    @media screen and (min-width: 600px) {
-      flex-direction: row;
-      flex-wrap: wrap;
+    @media screen and (min-width: 1500px) {
+      display: flex;
+      justify-content: space-between;
     }
   }
   &__item {
     display: flex;
     flex-direction: column;
     width: 100%;
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1500px) {
+      width: 420px;
+    }
+    @media screen and (min-width: 1728px) {
       width: calc((100% - 186px) / 3);
     }
-    background: #fa4d16;
     border-radius: 12px;
     overflow: hidden;
     &:not(:last-child) {
       margin-bottom: 52px;
-      @media screen and (min-width: 600px) {
-        margin-bottom: 0;
+      @media screen and (min-width: 1500px) {
+        margin: 0;
+      }
+      @media screen and (min-width: 1728px) {
         margin-right: 93px;
       }
     }
@@ -56,6 +59,7 @@
 .pet {
   &__description {
     padding: 17px 10px 17px 21px;
+    background: #fa4d16;
   }
   &__image {
     height: 315px;
